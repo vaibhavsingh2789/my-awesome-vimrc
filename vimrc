@@ -6,22 +6,20 @@ set expandtab     " insert spaces when hitting TABs
 set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftround    " round indent to multiple of 'shiftwidth'
 set cursorline " show a visual line under the cursor's current line 
-
+filetype plugin indent on
 set showmatch " show the matching part of the pair for [] {} and ()
 
 let python_highlight_all = 1 " enable all Python syntax highlighting features
-
 highlight ColorColumn ctermbg=darkgrey
 set colorcolumn=80 "color column 80
 
 "Open NerdTree by default
 "autocmd VimEnter * NERDTree
 map <esc>t :NERDTreeToggle<CR>
-
+execute pathogen#infect() 
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set modifiable
-
 
 "toggles whether or not the current window is automatically zoomed
 function! ToggleMaxWins()
