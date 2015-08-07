@@ -1,4 +1,4 @@
-se nu ai sm ruler
+set nu ai sm ruler
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " a hard TAB displays as 4 columns
@@ -10,6 +10,8 @@ filetype plugin indent on
 set showmatch " show the matching part of the pair for [] {} and ()
 
 let python_highlight_all = 1 " enable all Python syntax highlighting features
+set background=dark
+colorscheme solarized
 highlight ColorColumn ctermbg=7
 set colorcolumn=80 "color column 80
 
@@ -20,6 +22,7 @@ execute pathogen#infect()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set modifiable
+
 
 "toggles whether or not the current window is automatically zoomed
 function! ToggleMaxWins()
@@ -40,3 +43,13 @@ function! ToggleMaxWins()
 endfunction
 
 nnoremap <Leader>z :call ToggleMaxWins()<CR>
+nmap <F8> :TagbarToggle<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
