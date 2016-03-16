@@ -1,5 +1,4 @@
 set encoding=utf-8
-set t_Co=8
 set nocompatible
 set number
 let python_highlight_all = 1 " enable all Python syntax highlighting features
