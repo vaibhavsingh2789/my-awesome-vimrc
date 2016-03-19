@@ -20,6 +20,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
 call vundle#end()            " required
 filetype plugin indent on
 set background=dark
@@ -40,7 +41,7 @@ set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
-let g:airline_theme = 'bubblegum'
+let g:airline_theme = 'solarized'
 map ,t <Esc>:tabnew<CR>
 map ,n <Esc>:tabnext<CR>
 map ,p <Esc>:tabprevious<CR>
