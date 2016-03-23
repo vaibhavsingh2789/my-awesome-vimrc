@@ -1,6 +1,7 @@
 set encoding=utf-8
 set nocompatible
 set number
+set list
 let python_highlight_all = 1 " enable all Python syntax highlighting features
 set colorcolumn=80 "color column 80
 set cursorline " show a visual line under the cursor's current line
@@ -21,6 +22,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on
 set background=dark
@@ -48,3 +50,4 @@ map ,p <Esc>:tabprevious<CR>
 map ,/ <Esc>:CtrlPMixed<CR>
 nnoremap <C-W>M <C-W>\| <C-W>_
 nnoremap <C-W>m <C-W>=
+hi clear VertSplit
