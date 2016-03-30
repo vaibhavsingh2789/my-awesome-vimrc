@@ -1,3 +1,4 @@
+set t_Co=256
 set encoding=utf-8
 set nocompatible
 set number
@@ -23,6 +24,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'pearofducks/ansible-vim'
 call vundle#end()            " required
 filetype plugin indent on
 set background=dark
@@ -36,13 +38,11 @@ set tags=~/src/mytags
 set nofoldenable    " disable folding
 au CompleteDone * pclose "close python help after selection
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
+let g:ctrlp_by_filename = 1
 set modifiable
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#virtualenv#enabled = 1
 let g:airline_theme = 'solarized'
 map ,t <Esc>:tabnew<CR>
 map ,n <Esc>:tabnext<CR>
@@ -50,4 +50,3 @@ map ,p <Esc>:tabprevious<CR>
 map ,/ <Esc>:CtrlPMixed<CR>
 nnoremap <C-W>M <C-W>\| <C-W>_
 nnoremap <C-W>m <C-W>=
-hi clear VertSplit
