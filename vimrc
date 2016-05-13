@@ -25,6 +25,13 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'vimwiki/vimwiki'
+Plugin 'throughnothing/vimchat'
+Plugin 'itchyny/calendar.vim'
+Plugin 'Shougo/vimproc.git'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'yuratomo/gmail.vim'
+
 call vundle#end()            " required
 filetype plugin indent on
 set background=dark
@@ -38,15 +45,26 @@ set tags=~/src/mytags
 set nofoldenable    " disable folding
 au CompleteDone * pclose "close python help after selection
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = ',/'
+let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_by_filename = 1
 set modifiable
 set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'solarized'
+map <C-n> :bnext<CR>
+map <C-p> :bprevious<CR>
+nnoremap H gT
+nnoremap L gt
 map ,t <Esc>:tabnew<CR>
-map ,n <Esc>:tabnext<CR>
-map ,p <Esc>:tabprevious<CR>
 map ,/ <Esc>:CtrlPMixed<CR>
 nnoremap <C-W>M <C-W>\| <C-W>_
 nnoremap <C-W>m <C-W>=
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
+let g:gmail_imap = 'imap.gmail.com:993'
+let g:gmail_smtp = 'smtp.gmail.com:465'
+let g:gmail_user_name = 'nabarun.chatterjee@knowlarity.com'
+let g:gmail_signature = 'Thanks,\nNabarun Chatterjee'
+
