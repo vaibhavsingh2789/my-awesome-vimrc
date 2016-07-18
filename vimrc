@@ -31,6 +31,7 @@ Plugin 'itchyny/calendar.vim'
 Plugin 'Shougo/vimproc.git'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'yuratomo/gmail.vim'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -65,6 +66,12 @@ let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 let g:gmail_imap = 'imap.gmail.com:993'
 let g:gmail_smtp = 'smtp.gmail.com:465'
-let g:gmail_user_name = 'nabarun.chatterjee@knowlarity.com'
+let g:gmail_user_name = 'nabarun.chatterjee@olacabs.com'
 let g:gmail_signature = 'Thanks,\nNabarun Chatterjee'
+let g:gmail_mailbox_trash = "[Gmail]/Trash"
 
+"Disable arrow keys in vim
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
