@@ -32,6 +32,7 @@ Plugin 'Shougo/vimproc.git'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'yuratomo/gmail.vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 filetype plugin indent on
