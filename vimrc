@@ -67,8 +67,8 @@ let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 let g:gmail_imap = 'imap.gmail.com:993'
 let g:gmail_smtp = 'smtp.gmail.com:465'
-let g:gmail_user_name = 'nabarun.chatterjee@olacabs.com'
-let g:gmail_signature = 'Thanks,\nNabarun Chatterjee'
+let g:gmail_user_name = 'vaibhav.gour@olacabs.com'
+let g:gmail_signature = 'Thanks,\nVaibhav Singh Gour'
 let g:gmail_mailbox_trash = "[Gmail]/Trash"
 
 "Disable arrow keys in vim
